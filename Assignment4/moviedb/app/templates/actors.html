@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div class="ui link cards">
+		{% for actor in actors %}
+		<div class="ui card">
+			<div class="image">
+		    	<img src="{{ actor.pic }}" alt="{{ actor.name }}">
+		  	</div>
+		  	<div class="content">
+		    <header>{{ actor.name }}</header>
+		  	</div>
+		</div>
+		{% endfor %}
+	</div>
+{% endblock %}
